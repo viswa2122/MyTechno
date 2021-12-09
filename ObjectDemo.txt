@@ -1,0 +1,27 @@
+package com.technoelevate.practice;
+
+class Calc  {
+	int a;
+	int b;
+	int res;
+	
+	void perform() {
+		
+		res = a+b ;
+	}
+}
+
+
+public class ObjectDemo {
+
+	public static void main(String[] args) {
+		
+		Calc obj = new Calc();
+		obj.a = 59;
+		obj.b = 85;
+		
+		obj.perform();
+		
+		System.out.println(obj.res);
+	}
+}

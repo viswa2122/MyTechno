@@ -1,0 +1,17 @@
+package com.technoeleveate.constructor;
+
+public class Add {
+
+	public void add(int i) {
+		System.out.println(i);
+	}
+	public void add(int i, int j) {
+		System.out.println(i+j);
+	}
+	public static void main(String[] args) {
+		Add a = new Add();
+		a.add(54);
+		a.add(6, 65);
+	}
+	
+}

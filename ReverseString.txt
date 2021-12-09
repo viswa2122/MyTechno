@@ -1,0 +1,20 @@
+package com.technoeleveate.constructor;
+
+public class ReverseString {
+
+	public static void main(String[] args) {
+
+		String st = "Viswakanth",rt="";
+		char  ch ;
+		System.out.println("Before reversing");
+		System.out.println(st);
+		for(int i=0;i<st.length();i++) {
+			ch=st.charAt(i);
+			rt=ch+rt;
+		}
+		System.err.println("Length of the String  "+st.length());
+		System.out.println("After reversing");
+		System.out.println(rt);
+	}
+
+}

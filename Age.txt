@@ -1,0 +1,26 @@
+package com.technoelevate.practice;
+
+import java.util.Scanner;
+
+public class Age {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the age of the person");
+		int age = sc.nextInt();
+		int year = 2021-age;
+		System.out.println("Year of birth "+year);
+		if (year<=1996 && year>=1981) {
+			System.out.println("You belongs to Mellinial");
+		}
+		else if (year<=1980) {
+			System.out.println("They are older Generation");
+		}
+		else if(year >=1997 && year <=2000) {
+			System.out.println("You belong to Gen-Z");
+		}
+		else
+			System.out.println("You beling to 20th Generation kids");
+		sc.close();
+	}
+}
