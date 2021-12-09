@@ -1,0 +1,30 @@
+package com.technoelevate.polymorphism;
+
+class Bike {
+
+	void run()
+	{
+		System.out.println("Bike has two wheels");
+	}
+}
+
+class Car extends Bike {
+
+	void run()
+	{
+		System.out.println("Car has four wheels");
+	}
+}
+
+class TestPolymorphism3 {
+	public static void main(String[] args)
+	{
+
+		Bike a =  new Bike();
+		 a.run();
+
+		Car b = new Car();
+		b.run();
+	}
+}
+
