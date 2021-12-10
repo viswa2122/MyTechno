@@ -1,18 +1,33 @@
-package com.technoeleveate.constructor;
+package com.technoelevate.sortingconcepts;
+
+import java.util.Collections;
+import java.util.LinkedList;
 
 public class Classroom {
-
-	public static void main(String[] args) {
-		School S1= new School(null, 0);
-		S1.name ="Viswakanth";
-		S1.no = 21;
-		System.out.println(S1.name);
-		System.out.println(S1.no);
-		
-		School S2 = new School(null, 0);
-		S2.name = "Bhanu";
-		S2.no = 02;
-		System.out.println(S2.name);
-		System.out.println(S2.no);
-	}
+ private static LinkedList<School> ll = new LinkedList<School>();
+ public static void main(String[] args) {
+	
+	 School s1 = new School("nineth",20, 40);
+	 School s2 = new School("tenth",32, 25);
+	 School s3 = new School("first",62, 75);
+	 School s4 = new School("kanth",41, 15);
+	 School s5 = new School("viswa",56, 37);
+	 School s6 = new School("seven",75, 74);
+	
+	 ll.add(s1);
+	 ll.add(s2);
+	 ll.add(s3);
+	 ll.add(s4);
+	 ll.add(s5);
+	 ll.add(s6);
+	 
+	 Teach t= new Teach();
+	 
+	 Collections.sort(ll,t);
+	 for(Object a:ll) {
+		 System.out.print(a);
+	 }
+	 
+}
+	
 }

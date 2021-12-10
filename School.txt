@@ -1,12 +1,41 @@
-package com.technoeleveate.constructor;
+package com.technoelevate.sortingconcepts;
 
-public class School {
-	
-	String name;
-	int no;
-	public School(String name, int no) {
-		this.name = name;
-		this.no = no;
+
+public class School  {
+	private String room;
+	private Integer bench;
+	private int student;
+
+	public School(String room, int bench, int student) {
+		this.room = room;
+		this.bench = bench;
+		this.student = student;
+
 	}
-	
+
+	public String getRoom() {
+		return room;
+	}
+
+	public void setRoom(String room) {
+		this.room = room;
+	}
+
+	public Integer getBench() {
+		return bench;
+	}
+
+	public int getStudent() {
+		return student;
+	}
+
+	public void setStudent(int student) {
+		this.student = student;
+	}
+
+	@Override
+	public String toString() {
+		return "School [room=" + room + ", bench=" + bench + ", student=" + student + "]";
+	}
+
 }

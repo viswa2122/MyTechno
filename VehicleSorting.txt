@@ -1,0 +1,32 @@
+package com.technoelevate.sortingconcepts;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class VehicleSort {
+	private static ArrayList<Vehicle> veh = new ArrayList<Vehicle>();
+
+	public static void main(String[] args) {
+		
+		Vehicle motar1 = new Vehicle("kia", 2, 2);
+		Vehicle motar2 = new Vehicle("Car", 4, 5);
+		Vehicle motar3 = new Vehicle("Tractor", 6,12);
+		Vehicle motar4 = new Vehicle("Truck", 12, 100);
+		Vehicle motar5 = new Vehicle("Bus", 8,40);
+		
+		veh.add(motar1);
+		veh.add(motar2);
+		veh.add(motar3);
+		veh.add(motar4);
+		veh.add(motar5);
+		
+		Collections.sort( veh);
+		
+		for(Vehicle veh : veh) {
+			System.out.println(veh);
+		}
+				
+
+	}
+
+}
