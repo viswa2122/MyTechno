@@ -1,0 +1,21 @@
+package com.technoeleveate.constructor;
+class A extends B{
+	public void eat() {
+		System.out.println("He is eating Biryani");
+	}
+}
+class B {
+	public void eat() {
+		System.out.println("He is eating Dessert");
+	}
+}
+
+public class MethodOverriding {
+
+	public static void main(String[] args) {
+		A a= new A();
+		a.eat();
+	}
+	
+	
+}
