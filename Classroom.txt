@@ -1,0 +1,18 @@
+package com.technoeleveate.constructor;
+
+public class Classroom {
+
+	public static void main(String[] args) {
+		School S1= new School(null, 0);
+		S1.name ="Viswakanth";
+		S1.no = 21;
+		System.out.println(S1.name);
+		System.out.println(S1.no);
+		
+		School S2 = new School(null, 0);
+		S2.name = "Bhanu";
+		S2.no = 02;
+		System.out.println(S2.name);
+		System.out.println(S2.no);
+	}
+}
