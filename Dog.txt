@@ -1,0 +1,20 @@
+package com.technoelevate.mock1;
+
+public class Dog extends Upcasting{
+	public Dog() {
+	animal="dog";
+	breed="Goldenretriver";
+	colour="cream";
+}
+public static void main(String[] args) {
+
+	Upcasting up = new Dog();
+	System.out.println("enter the animal");
+	System.out.println(up.animal);
+	System.out.println("breed");
+	System.out.println(up.breed);
+	System.out.println("enter the colour");
+	System.out.println(up.colour);
+
+}
+}

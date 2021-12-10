@@ -1,0 +1,9 @@
+package com.technoelevate.mock1;
+
+ class Upcasting {
+	String animal;
+	String breed;
+	String colour;
+
+}
+
